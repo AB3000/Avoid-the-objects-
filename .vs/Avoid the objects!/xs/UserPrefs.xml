@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{AF358674-1BC2-5FF3-C232-37CC7B221A53}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ButtonController.cs">
+    <Files>
+      <File FileName="Assets/scripts/ButtonController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Avoid_220the_220objects_221 PreferredExecutionTarget="Unity.Editor" />
+</Properties>
