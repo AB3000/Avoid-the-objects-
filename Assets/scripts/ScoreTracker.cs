@@ -8,6 +8,7 @@ public class ScoreTracker : MonoBehaviour {
     public Text Score;
 	// Use this for initialization
 	void Start () {
+
         Score.text = "0";
 	}
 	
