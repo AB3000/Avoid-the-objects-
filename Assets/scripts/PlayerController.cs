@@ -6,11 +6,13 @@ public class PlayerController : MonoBehaviour {
 
     public float maxS = 11f;
     public Animator a;
+    public static int score;
     public bool isRight = true;
 
 	// Use this for initialization
 	void Start () {
-        a = GetComponent <Animator> (); 
+        a = GetComponent <Animator> ();
+        score = 0;
 
 	}
 	

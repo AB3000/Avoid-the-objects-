@@ -5,7 +5,6 @@ using UnityEngine;
 public class falling_shapes : MonoBehaviour {
     
     public GameObject fallingShape;
-    public static int score = 0; 
     float speed = 0.0005f;
     bool isTouchingGround;
     float y;
@@ -20,6 +19,7 @@ public class falling_shapes : MonoBehaviour {
         y = fallingShape.transform.position.y;
         isTouchingGround = false;
         yChange = 0.1f;
+        PlayerController.score = 0;
 	}
 	
 	// Update is called once per frame
@@ -28,9 +28,9 @@ public class falling_shapes : MonoBehaviour {
                        (float) y, fallingShape.transform.position.z);
             y -= yChange;
             if(y < - 3.83){
-                isTouchingGround = true;
+                 isTouchingGround = true;
                  y = 5.5f;
-                score++;
+                 PlayerController.score++;
             yChange = Random.Range(0.1f, 0.3f);
                 fallingShape.transform.position = new Vector3(Random.Range(-10.0f, 10.0f),
                     y, fallingShape.transform.position.z);
