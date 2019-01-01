@@ -189,9 +189,10 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-'Assets/scripts/ButtonController.cs'
-'Assets/scripts/changeColor.cs'
-'Assets/scripts/falling_shapes.cs'
-'Assets/scripts/obstacle.cs'
-'Assets/scripts/PlayerController.cs'
-'Assets/scripts/ScoreTracker.cs'
+'Assets/Resources/scripts/ButtonController.cs'
+'Assets/Resources/scripts/changeColor.cs'
+'Assets/Resources/scripts/ChangeWithCamera.cs'
+'Assets/Resources/scripts/falling_shapes.cs'
+'Assets/Resources/scripts/obstacle.cs'
+'Assets/Resources/scripts/PlayerController.cs'
+'Assets/Resources/scripts/ScoreTracker.cs'
