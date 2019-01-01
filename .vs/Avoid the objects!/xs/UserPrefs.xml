@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{BE421068-AE7A-F2D6-FC8C-7F090764183E}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/scripts/falling_shapes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/scripts/ChangeWithCamera.cs">
     <Files>
-      <File FileName="Assets/scripts/ScoreTracker.cs" Line="17" Column="56" />
-      <File FileName="Assets/scripts/PlayerController.cs" Line="28" Column="10" />
-      <File FileName="Assets/scripts/ChangeWithCamera.cs" Line="15" Column="55" />
-      <File FileName="Assets/Resources/scripts/falling_shapes.cs" Line="29" Column="11" />
+      <File FileName="Assets/Resources/scripts/falling_shapes.cs" Line="45" Column="83" />
       <File FileName="Assets/Resources/scripts/ChangeWithCamera.cs" Line="9" Column="79" />
     </Files>
   </MonoDevelop.Ide.Workbench>

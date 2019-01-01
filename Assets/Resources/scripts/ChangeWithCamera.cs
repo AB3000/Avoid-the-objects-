@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ChangeWithCamera : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        gameObject.transform.localScale = new Vector3(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize, gameObject.transform.localScale.z);
+    void Awake()
+    {
 
+        this.gameObject.transform.localScale = new Vector3(1, 1, 1);
+
+        float width = gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+        float height = gameObject.GetComponent<SpriteRenderer>().sprite.bounds.size.y;
+
+        float worldScreenHeight = Camera.main.orthographicSize * 2.0f;
+        float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+
+        this.gameObject.transform.localScale = new Vector3(worldScreenWidth / width, worldScreenHeight / height, 1);
     }
 
-    // Update is called once per frame
-    void Update () {
-        gameObject.transform.localScale = new Vector3(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize, gameObject.transform.localScale.z);
-    
-	}
 }
