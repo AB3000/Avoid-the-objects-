@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangeWithCamera : MonoBehaviour {
 
-    void Awake()
+    void Update()
     {
 
         this.gameObject.transform.localScale = new Vector3(1, 1, 1);
