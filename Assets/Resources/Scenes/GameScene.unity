@@ -563,8 +563,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392153242}
   m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 6.7814517, y: 0.04358348, z: 0}
-  m_LocalScale: {x: 0.7990312, y: 0.76281846, z: 4.8099566}
+  m_LocalPosition: {x: 6.87, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.7990312, y: 0.371874, z: 4.8099566}
   m_Children: []
   m_Father: {fileID: 1628175933}
   m_RootOrder: 3
@@ -858,7 +858,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.29, y: 0}
+  m_Offset: {x: -0.10282898, y: -0.07265794}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -869,7 +869,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.78, y: 4.15}
+  m_Size: {x: 4.7532854, y: 4.731266}
   m_EdgeRadius: 0
 --- !u!114 &961969696
 MonoBehaviour:
@@ -960,8 +960,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1000828613}
   m_LocalRotation: {x: -0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -7.3383102, y: 0.04358348, z: 0}
-  m_LocalScale: {x: 0.7990312, y: 0.76281846, z: 4.8099566}
+  m_LocalPosition: {x: -7.1, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.7990312, y: 0.33373308, z: 4.8099566}
   m_Children: []
   m_Father: {fileID: 1628175933}
   m_RootOrder: 2
@@ -1340,7 +1340,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4235066521226126, guid: 5d76825b3fffc432190c4fff27e0fd01, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.83
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: 4235066521226126, guid: 5d76825b3fffc432190c4fff27e0fd01, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1369,22 +1369,22 @@ Prefab:
     - target: {fileID: 61888519366032296, guid: 5d76825b3fffc432190c4fff27e0fd01,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.21068585
+      value: 0.28330854
       objectReference: {fileID: 0}
     - target: {fileID: 61888519366032296, guid: 5d76825b3fffc432190c4fff27e0fd01,
         type: 2}
       propertyPath: m_Offset.y
-      value: 0.4731484
+      value: 0.48807454
       objectReference: {fileID: 0}
     - target: {fileID: 61888519366032296, guid: 5d76825b3fffc432190c4fff27e0fd01,
         type: 2}
       propertyPath: m_Size.x
-      value: 1.4424531
+      value: 1.5844858
       objectReference: {fileID: 0}
     - target: {fileID: 61888519366032296, guid: 5d76825b3fffc432190c4fff27e0fd01,
         type: 2}
       propertyPath: m_Size.y
-      value: 1.460833
+      value: 1.6333752
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61024744403785758, guid: 5d76825b3fffc432190c4fff27e0fd01, type: 2}

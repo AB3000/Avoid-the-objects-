@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         float move = Input.GetAxis("Horizontal");
         a.SetFloat("speed", Mathf.Abs(move));
-        GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxS,
-            GetComponent<Rigidbody2D>().velocity.y);
+        /*GetComponent<Rigidbody2D>().velocity = new Vector2(move * maxS,
+            GetComponent<Rigidbody2D>().velocity.y);*/
         if (move > 0 && !isRight)
         {
             Flip();
@@ -36,8 +36,19 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
+    /*void OnMouseDown()
+    {
+        Rect screenRect = new Rect(0, 0, Screen.width, Screen.height);
+        if (!screenRect.Contains(Input.mousePosition))
+            return;
+    }*/
+
     void OnMouseDrag()
     {
+        Rect screenRect = new Rect(0, 0, Screen.width, Screen.height);
+        if (!screenRect.Contains(Input.mousePosition))
+            return;
+
         float distance_to_screen = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         Vector3 pos_move = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0.04f, distance_to_screen));
         transform.position = new Vector3(pos_move.x, transform.position.y, pos_move.z);
