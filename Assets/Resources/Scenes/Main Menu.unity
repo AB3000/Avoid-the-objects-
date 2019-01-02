@@ -245,8 +245,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 358186731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.087387, y: -0.7173734, z: 0}
-  m_LocalScale: {x: 2.397386, y: 2.3973868, z: 2.3973868}
+  m_LocalPosition: {x: 5.402, y: -0.032, z: 0}
+  m_LocalScale: {x: 1.4573015, y: 1.5181788, z: 2.3973868}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -263,6 +263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 358186731}
+  scoreFall: -1
+  card: 4
 --- !u!1 &439503736
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +353,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 439503736}
+  scoreFall: -1
+  card: 2
 --- !u!1 &517242691
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 758579470}
+  scoreFall: -1
+  card: 3
 --- !u!1 &833880110
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 833880110}
+  scoreFall: -1
+  card: 2
 --- !u!1 &1091712781
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +724,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f33d37cc99de1483db203316e23fd27f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -735,8 +743,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260357053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.36, y: 4.34, z: 0}
-  m_LocalScale: {x: 2.9432156, y: 2.9432154, z: 2.9432154}
+  m_LocalPosition: {x: -7.917, y: 5.732, z: 0}
+  m_LocalScale: {x: 0.9610041, y: 1.0217814, z: 2.9432154}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -753,6 +761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 1260357053}
+  scoreFall: -1
+  card: 1
 --- !u!1001 &1265707027
 Prefab:
   m_ObjectHideFlags: 0
@@ -820,6 +830,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.3943819
       objectReference: {fileID: 0}
+    - target: {fileID: 95466128053405644, guid: 1174d7bfd64ed4a8d963dedd0c603f36,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9055ea3d96f054f69a028a3c635f7c8d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1174d7bfd64ed4a8d963dedd0c603f36, type: 2}
   m_IsPrefabAsset: 0
@@ -1279,6 +1294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallingShape: {fileID: 1942460347}
+  scoreFall: -1
+  card: 1
 --- !u!1 &1995482637
 GameObject:
   m_ObjectHideFlags: 0
