@@ -310,7 +310,6 @@ MonoBehaviour:
   card: 1
   lowerSpeedLimit: 0
   upperSpeedLimit: 0
-  amountToAdd: 0
 --- !u!61 &88309460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -713,7 +712,6 @@ MonoBehaviour:
   card: 1
   lowerSpeedLimit: 0
   upperSpeedLimit: 0
-  amountToAdd: 0
 --- !u!1 &323506411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,10 +1314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc9f41e47b6f43649ce427cc781847b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 631228613}
-  fallingShape: {fileID: 0}
-  scoreFall: 50
-  card: 0
+  fallingShape: {fileID: 631228613}
+  scoreFall: -1
   lowerSpeedLimit: 0.01
   upperSpeedLimit: 0.03
   amountToAdd: 5
@@ -1722,7 +1718,6 @@ MonoBehaviour:
   card: 2
   lowerSpeedLimit: 0
   upperSpeedLimit: 0
-  amountToAdd: 0
 --- !u!1 &966608748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1785045419069442, guid: 5d76825b3fffc432190c4fff27e0fd01,
@@ -1952,7 +1947,6 @@ MonoBehaviour:
   card: 4
   lowerSpeedLimit: 0
   upperSpeedLimit: 0
-  amountToAdd: 0
 --- !u!1001 &1018344509
 Prefab:
   m_ObjectHideFlags: 0
@@ -2492,7 +2486,6 @@ MonoBehaviour:
   card: 3
   lowerSpeedLimit: 0
   upperSpeedLimit: 0
-  amountToAdd: 0
 --- !u!1 &1242150844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
@@ -3116,10 +3109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc9f41e47b6f43649ce427cc781847b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 1793312897}
-  fallingShape: {fileID: 0}
+  fallingShape: {fileID: 1793312897}
   scoreFall: 100
-  card: 0
   lowerSpeedLimit: 0.001
   upperSpeedLimit: 0.003
   amountToAdd: 10
