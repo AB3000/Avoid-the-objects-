@@ -13,6 +13,9 @@ public class falling_shapes : MonoBehaviour {
     public int card;
     int number;
     Sprite[] allSprites;
+    public float lowerSpeedLimit;
+    public float upperSpeedLimit;
+    public int amountToAdd; 
 
     
 
@@ -29,6 +32,12 @@ public class falling_shapes : MonoBehaviour {
         allSprites = Resources.LoadAll<Sprite>("sprites/abstractshapes" + card);
         //Debug.Log("length is " + allSprites.Length);
 
+        if(System.Math.Abs(lowerSpeedLimit - upperSpeedLimit) < 0.00001)
+        {
+            lowerSpeedLimit = 0.1f;
+            upperSpeedLimit = 0.3f;
+        }
+
     }
 
     // Update is called once per frame
@@ -39,8 +48,10 @@ public class falling_shapes : MonoBehaviour {
         }
 
         //Debug.Log("number of sprites are " + allSprites.Length);
-
-        this.GetComponent<SpriteRenderer>().sprite = allSprites[number];
+        if (allSprites.Length > 0)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = allSprites[number];
+        }
 
         //after player reaches a certain score, the object will fall. Set in scene
         if (PlayerController.score > scoreFall) 
@@ -52,8 +63,14 @@ public class falling_shapes : MonoBehaviour {
             {
                 isTouchingGround = true;
                 y = 5.5f;
-                PlayerController.score++;
-                yChange = Random.Range(0.1f, 0.3f);
+
+                if(amountToAdd <= 0){
+                    PlayerController.score++;
+                } else{
+                    PlayerController.score += amountToAdd;
+                }
+
+                yChange = Random.Range(lowerSpeedLimit, upperSpeedLimit);
                 fallingShape.transform.position = new Vector3(Random.Range(-(Camera.main.orthographicSize * Camera.main.aspect), (Camera.main.orthographicSize * Camera.main.aspect)),
             y, fallingShape.transform.position.z);
                 number++;
