@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class falling_shapes : MonoBehaviour {
     
-    public GameObject fallingShape;
+    /*public GameObject fallingShape;
     float speed = 0.0005f;
     bool isTouchingGround; //if true, then reset position of falling object to top 
     float y;
@@ -72,11 +72,11 @@ public class falling_shapes : MonoBehaviour {
 
                 yChange = Random.Range(lowerSpeedLimit, upperSpeedLimit);
                 fallingShape.transform.position = new Vector3(Random.Range(-(Camera.main.orthographicSize * Camera.main.aspect), (Camera.main.orthographicSize * Camera.main.aspect)),
-            y, fallingShape.transform.position.z);
+                 y, fallingShape.transform.position.z);
                 number++;
             }
         }
 
        
-    }
+    }*/
 }

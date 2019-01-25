@@ -172,6 +172,21 @@ Prefab:
       propertyPath: scoreFall
       value: 160
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 925982897}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
@@ -265,11 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingShape: {fileID: 88309454}
-  scoreFall: -1
-  card: 3
-  lowerSpeedLimit: 0
-  upperSpeedLimit: 0
 --- !u!114 &88309458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +305,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2439d083b8f447298d36a69352637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingShape: {fileID: 88309454}
+  scoreFall: -1
+  card: 1
+  lowerSpeedLimit: 0
+  upperSpeedLimit: 0
+  amountToAdd: 0
 --- !u!61 &88309460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -383,7 +399,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5492fdbbecce54bc5864be496d45d4d8, type: 3}
   m_Color: {r: 0.76862746, g: 1, b: 0.5529412, a: 1}
   m_FlipX: 0
@@ -492,6 +508,21 @@ Prefab:
       propertyPath: scoreFall
       value: 350
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1242150844}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
@@ -558,7 +589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 301940977}
   - component: {fileID: 301940976}
-  - component: {fileID: 301940978}
   - component: {fileID: 301940981}
   - component: {fileID: 301940979}
   - component: {fileID: 301940980}
@@ -628,22 +658,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &301940978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 301940975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallingShape: {fileID: 301940975}
-  scoreFall: -1
-  card: 1
-  lowerSpeedLimit: 0
-  upperSpeedLimit: 0
 --- !u!114 &301940979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +708,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2439d083b8f447298d36a69352637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingShape: {fileID: 301940975}
+  scoreFall: 0
+  card: 1
+  lowerSpeedLimit: 0
+  upperSpeedLimit: 0
+  amountToAdd: 0
 --- !u!1 &323506411
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +776,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &344093466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1229912886}
 --- !u!1 &392153242
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +894,21 @@ Prefab:
       propertyPath: scoreFall
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 924789264}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
@@ -956,7 +996,23 @@ Prefab:
       propertyPath: scoreFall
       value: 420
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 637661788}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 560
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114096483785425470, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &501452180
@@ -1054,6 +1110,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0.102, y: 0}
   m_SizeDelta: {x: 1121.423, y: 438}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &520629173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1228771046}
 --- !u!1 &577554407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5492fdbbecce54bc5864be496d45d4d8, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1139,6 +1200,8 @@ GameObject:
   - component: {fileID: 631228616}
   - component: {fileID: 631228615}
   - component: {fileID: 631228614}
+  - component: {fileID: 631228617}
+  - component: {fileID: 631228618}
   m_Layer: 0
   m_Name: powerup1
   m_TagString: Untagged
@@ -1157,11 +1220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingShape: {fileID: 0}
-  scoreFall: 0
-  card: 0
-  lowerSpeedLimit: 0.001
-  upperSpeedLimit: 0.003
 --- !u!212 &631228615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1196,7 +1254,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 48b84d96aacea4817b77b352773fa0dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1215,13 +1273,66 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 631228613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2, y: 18, z: 0}
+  m_LocalPosition: {x: 3.2, y: 6.3, z: 0}
   m_LocalScale: {x: 0.18993956, y: 0.18993956, z: 0.18993956}
   m_Children:
   - {fileID: 577554408}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &631228617
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631228613}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.18, y: 5.05}
+    newSize: {x: 5.18, y: 5.05}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.18, y: 5.05}
+  m_EdgeRadius: 0
+--- !u!114 &631228618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631228613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc9f41e47b6f43649ce427cc781847b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 631228613}
+  fallingShape: {fileID: 0}
+  scoreFall: 50
+  card: 0
+  lowerSpeedLimit: 0.01
+  upperSpeedLimit: 0.03
+  amountToAdd: 5
+--- !u!1 &637661788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 476573497}
+--- !u!1 &649518677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 733243206}
 --- !u!1001 &733243206
 Prefab:
   m_ObjectHideFlags: 0
@@ -1280,6 +1391,21 @@ Prefab:
         type: 2}
       propertyPath: scoreFall
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 649518677}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
@@ -1359,6 +1485,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &813860170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 913394555}
 --- !u!1001 &913394555
 Prefab:
   m_ObjectHideFlags: 0
@@ -1418,9 +1549,34 @@ Prefab:
       propertyPath: scoreFall
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 813860170}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &924789264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 472606418}
+--- !u!1 &925982897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 41870403}
 --- !u!1 &961969690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,11 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingShape: {fileID: 961969690}
-  scoreFall: -1
-  card: 2
-  lowerSpeedLimit: 0
-  upperSpeedLimit: 0
 --- !u!114 &961969694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1717,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2439d083b8f447298d36a69352637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingShape: {fileID: 961969690}
+  scoreFall: -1
+  card: 2
+  lowerSpeedLimit: 0
+  upperSpeedLimit: 0
+  amountToAdd: 0
 --- !u!1 &966608748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1785045419069442, guid: 5d76825b3fffc432190c4fff27e0fd01,
@@ -1740,11 +1897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingShape: {fileID: 1015185511}
-  scoreFall: -1
-  card: 1
-  lowerSpeedLimit: 0
-  upperSpeedLimit: 0
 --- !u!114 &1015185515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,6 +1947,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2439d083b8f447298d36a69352637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingShape: {fileID: 1015185511}
+  scoreFall: 0
+  card: 4
+  lowerSpeedLimit: 0
+  upperSpeedLimit: 0
+  amountToAdd: 0
 --- !u!1001 &1018344509
 Prefab:
   m_ObjectHideFlags: 0
@@ -1879,9 +2037,29 @@ Prefab:
       propertyPath: scoreFall
       value: 410
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1813072397}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 540
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1097732173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1827570175}
 --- !u!1 &1164990134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,6 +2227,21 @@ Prefab:
       propertyPath: scoreFall
       value: 405
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 520629173}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
@@ -2135,6 +2328,21 @@ Prefab:
         type: 2}
       propertyPath: scoreFall
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 344093466}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 520
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
@@ -2229,11 +2437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingShape: {fileID: 1234689848}
-  scoreFall: -1
-  card: 4
-  lowerSpeedLimit: 0
-  upperSpeedLimit: 0
 --- !u!114 &1234689852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2487,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2439d083b8f447298d36a69352637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingShape: {fileID: 1234689848}
+  scoreFall: 0
+  card: 3
+  lowerSpeedLimit: 0
+  upperSpeedLimit: 0
+  amountToAdd: 0
+--- !u!1 &1242150844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 277303026}
 --- !u!1001 &1247728052
 Prefab:
   m_ObjectHideFlags: 0
@@ -2376,6 +2590,21 @@ Prefab:
       propertyPath: scoreFall
       value: 390
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1915035249}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 400
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
@@ -2462,6 +2691,11 @@ Prefab:
     - {fileID: 61888519366032296, guid: 5d76825b3fffc432190c4fff27e0fd01, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5d76825b3fffc432190c4fff27e0fd01, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1537184844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1989082916}
 --- !u!1001 &1612827640
 Prefab:
   m_ObjectHideFlags: 0
@@ -2553,6 +2787,21 @@ Prefab:
         type: 2}
       propertyPath: scoreFall
       value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1838380869}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 350
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
@@ -2751,6 +3000,8 @@ GameObject:
   - component: {fileID: 1793312899}
   - component: {fileID: 1793312898}
   - component: {fileID: 1793312900}
+  - component: {fileID: 1793312901}
+  - component: {fileID: 1793312902}
   m_Layer: 0
   m_Name: powerup2
   m_TagString: Untagged
@@ -2792,7 +3043,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300016, guid: 326b44cc634354e12afbab35c83ee2cf, type: 3}
   m_Color: {r: 0.76862746, g: 1, b: 0.5529412, a: 1}
   m_FlipX: 0
@@ -2829,11 +3080,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998fb98ad2c704e6e86fcb41d2aaaf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1793312901
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1793312897}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.57, y: 2.27}
+    newSize: {x: 4.57, y: 2.27}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.57, y: 2.27}
+  m_EdgeRadius: 0
+--- !u!114 &1793312902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1793312897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc9f41e47b6f43649ce427cc781847b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 1793312897}
   fallingShape: {fileID: 0}
-  scoreFall: 0
+  scoreFall: 100
   card: 0
   lowerSpeedLimit: 0.001
   upperSpeedLimit: 0.003
+  amountToAdd: 10
+--- !u!1 &1813072397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018344509}
 --- !u!1001 &1827570175
 Prefab:
   m_ObjectHideFlags: 0
@@ -2893,9 +3187,34 @@ Prefab:
       propertyPath: scoreFall
       value: 140
       objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1097732173}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1838380869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1612827640}
+--- !u!1 &1915035249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716285078705582, guid: 1ece43b353b0744b699d4e9e701ebac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1247728052}
 --- !u!1001 &1989082916
 Prefab:
   m_ObjectHideFlags: 0
@@ -2987,6 +3306,21 @@ Prefab:
         type: 2}
       propertyPath: scoreFall
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: fallingShape
+      value: 
+      objectReference: {fileID: 1537184844}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: card
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369269076438522, guid: 1ece43b353b0744b699d4e9e701ebac9,
+        type: 2}
+      propertyPath: scoreFall
+      value: 450
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece43b353b0744b699d4e9e701ebac9, type: 2}
