@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-	}
+
+    }
 
     /*void OnMouseDown()
     {
@@ -45,6 +46,8 @@ public class PlayerController : MonoBehaviour {
 
     void OnMouseDrag()
     {
+
+       
         Rect screenRect = new Rect(0, 0, Screen.width, Screen.height);
         if (!screenRect.Contains(Input.mousePosition))
             return;
